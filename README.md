@@ -1,10 +1,10 @@
-#Vibration Anomaly Detection Using TinyML
+# Vibration Anomaly Detection Using TinyML
 
 This project implements a **real-time vibration anomaly detection system** using an **autoencoder neural network** deployed on an **Arduino Nano 33 BLE Sense Rev2** with an **MPU6050 accelerometer**. A secondary **LCD via Arduino Uno** displays anomaly status.
 
 ---
 
-## 📌 Overview
+## Overview
 
 - **Goal:** Detect abnormal vibration patterns using machine learning on-device
 - **Board:** Arduino Nano 33 BLE Sense Rev2
@@ -16,7 +16,7 @@ This project implements a **real-time vibration anomaly detection system** using
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 - Monitor vibration behavior of rotating machinery (like a fan)
 - Detect unusual patterns using unsupervised machine learning (autoencoder)
@@ -25,7 +25,7 @@ This project implements a **real-time vibration anomaly detection system** using
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. **Sensor Data Collection**
    - The MPU6050 collects acceleration data on X, Y, Z axes at ~200 Hz.
@@ -47,7 +47,7 @@ This project implements a **real-time vibration anomaly detection system** using
 
 ---
 
-## 🔩 Hardware Required
+## Hardware Required
 
 | Component               | Description                          |
 |-------------------------|--------------------------------------|
@@ -61,7 +61,7 @@ This project implements a **real-time vibration anomaly detection system** using
 
 ---
 
-## 🧰 Software Used
+## Software Used
 
 - Arduino IDE
 - TensorFlow Lite for Microcontrollers
@@ -71,9 +71,9 @@ This project implements a **real-time vibration anomaly detection system** using
 
 ---
 
-## ⚙️ Connections
+## Connections
 
-### 🟩 MPU6050 to Nano 33 BLE Sense
+### MPU6050 to Nano 33 BLE Sense
 | MPU6050 Pin | Nano Pin     |
 |-------------|--------------|
 | VCC         | 3.3V         |
@@ -81,7 +81,7 @@ This project implements a **real-time vibration anomaly detection system** using
 | SDA         | A4 (SDA)     |
 | SCL         | A5 (SCL)     |
 
-### 🟦 LCD to Arduino Uno (5V Side)
+### LCD to Arduino Uno (5V Side)
 | LCD Pin | Uno Pin    |
 |---------|------------|
 | VCC     | 5V         |
@@ -89,10 +89,11 @@ This project implements a **real-time vibration anomaly detection system** using
 | SDA     | A4         |
 | SCL     | A5         |
 
-### 🔁 Nano ↔ Uno Serial Bridge (Optional)
+### Nano ↔ Uno Serial Bridge (Optional)
 - Nano TX → Uno RX
 - Nano GND ↔ Uno GND (Shared ground is **required**)
 
 ---
 
-
+## References
+Edge AI anomaly detection - DigiKey
